@@ -33,6 +33,7 @@ class CarModel(models.Model):
             MaxValueValidator(2023),
             MinValueValidator(2015)
         ])
+    dealer_id = models.IntegerField(default=1)    
     # Other fields as needed
 
     def __str__(self):
